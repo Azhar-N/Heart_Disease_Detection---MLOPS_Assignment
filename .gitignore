@@ -1,0 +1,64 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+.venv
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb_checkpoints
+
+# MLflow
+mlruns/
+mlartifacts/
+
+# Data
+data/raw/*.csv
+data/processed/*.pkl
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+
+# Models
+models/*.pkl
+models/*.joblib
+!models/.gitkeep
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Environment variables
+.env
+.env.local
+
+# Logs
+*.log
+logs/
+
+# Docker
+.dockerignore
+
+# Kubernetes
+*.kubeconfig
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Screenshots (keep folder but ignore contents)
+screenshots/*.png
+screenshots/*.jpg
+!screenshots/.gitkeep
