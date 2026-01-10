@@ -178,6 +178,7 @@ The GitHub Actions workflow automatically:
 - Prometheus metrics available at `/metrics`
 - Grafana dashboards (if configured)
 - API logs in structured JSON format
+-
 
 ## License
 
