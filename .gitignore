@@ -22,6 +22,7 @@ data/raw/*.csv
 data/processed/*.pkl
 !data/raw/.gitkeep
 !data/processed/.gitkeep
+feature_importance.csv
 
 # Models
 models/*.pkl
