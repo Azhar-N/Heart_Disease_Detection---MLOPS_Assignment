@@ -63,3 +63,10 @@ htmlcov/
 screenshots/*.png
 screenshots/*.jpg
 !screenshots/.gitkeep
+
+# Excluded Documentation & Config
+PROJECT_SUMMARY.md
+DOCKER_SETUP.md
+QUICKSTART.md
+.flake8
+TROUBLESHOOTING.md

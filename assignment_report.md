@@ -14,7 +14,7 @@
 | NITIN KUSHWAHA | 2024AA05764 |
 | POORNIMA T | 2024AA05600 |
 
----
+<div style="page-break-after: always;"></div>
 
 ## Table of Contents
 1. [Link to Code Repository](#link-to-code-repository)
@@ -24,13 +24,13 @@
 5. [Architecture Diagram](#4-architecture-diagram)
 6. [CI/CD and Deployment Workflow Screenshots](#5-cicd-and-deployment-workflow-screenshots)
 
----
+<div style="page-break-after: always;"></div>
 
 ## Link to Code Repository
 
-**GitHub Repository:** https://github.com/username/mlops-heart-disease
+**GitHub Repository:** [https://github.com/Azhar-N/Heart_Disease_Detection---MLOPS_Assignment.git](https://github.com/Azhar-N/Heart_Disease_Detection---MLOPS_Assignment.git)
 
----
+<div style="page-break-after: always;"></div>
 
 ## 1. Setup/Install Instructions
 
@@ -67,7 +67,7 @@ To set up the project locally, follow these steps:
    python src/data/download.py
    ```
 
----
+<div style="page-break-after: always;"></div>
 
 ## 2. EDA and Modelling Choices
 
@@ -93,11 +93,9 @@ Two classification models were selected to establish a baseline and capture comp
 - **Logistic Regression:** Accuracy: 0.86 | ROC-AUC: 0.95
 - **Random Forest:** Accuracy: 0.88 | ROC-AUC: 0.95
 
-*The Random Forest model was chosen for production deployment because it was providing higher accuacy.*
+*The Random Forest model was chosen for production deployment because it provided higher accuracy.*
 
-
-
----
+<div style="page-break-after: always;"></div>
 
 ## 3. Experiment Tracking Summary
 
@@ -135,8 +133,7 @@ Multiple runs were executed to tune hyperparameters. The best run (Random Forest
   <img src="Images/RF2.png" width="600">
 </div>
 
-
----
+<div style="page-break-after: always;"></div>
 
 ## 4. Architecture Diagram
 
@@ -162,7 +159,7 @@ graph TD
 3. **Serving Layer:** FastAPI application exposing REST endpoints (`/predict`).
 4. **Ops Layer:** CI/CD via GitHub Actions, Docker containerization, and K8s orchestration.
 
----
+<div style="page-break-after: always;"></div>
 
 ## 5. CI/CD and Deployment Workflow Screenshots
 
@@ -173,7 +170,12 @@ The GitHub Actions workflow (`.github/workflows/ci_cd.yml`) automates:
 3. **Training:** dry-run of training script.
 4. **Build:** Docker image creation.
 
-*[User Action: Insert Screenshot of GitHub Actions Success Page here]*
+<div style="border:1px solid #ccc; padding:10px; text-align:center;">
+  <p><strong>CI/CD Pipeline</strong></p>
+  <img src="Images/CICD_Pipeline.png" width="600">
+</div>
+
+<div style="page-break-after: always;"></div>
 
 ### Production Deployment
 The application is deployed on Kubernetes with 3 replicas for high availability.
@@ -212,6 +214,5 @@ The application is deployed on Kubernetes with 3 replicas for high availability.
   <p><strong>Prometheus Monitoring</strong></p>
   <img src="Images/Prometheus.png" width="600">
 </div>
-
 
 ---

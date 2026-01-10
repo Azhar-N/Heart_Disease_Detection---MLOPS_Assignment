@@ -1,0 +1,19 @@
+apiVersion: monitoring.coreos.com/v1
+kind: ServiceMonitor
+metadata:
+  name: heart-disease-api-monitor
+  labels:
+    release: prometheus
+    app: heart-disease-api
+spec:
+  jobLabel: app
+  selector:
+    matchLabels:
+      app: heart-disease-api
+  endpoints:
+  - port: http
+    path: /metrics
+    interval: 15s
+  namespaceSelector:
+    matchNames:
+    - default

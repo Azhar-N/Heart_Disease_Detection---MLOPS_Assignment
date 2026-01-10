@@ -310,5 +310,3 @@ Use this checklist to ensure all requirements are met:
 2. Check MLflow UI for experiment tracking
 3. Review `ARCHITECTURE.md` for system design
 4. Review `DEPLOYMENT.md` for deployment details
-5. Use `REPORT_TEMPLATE.md` to create your assignment report
-6. Take screenshots for your report (workflow runs, MLflow UI, API testing)
